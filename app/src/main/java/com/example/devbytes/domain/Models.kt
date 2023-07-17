@@ -2,6 +2,8 @@ package com.example.devbytes.domain
 
 import com.example.devbytes.util.smartTruncate
 
+
+
 data class DevByteVideo(
     val title: String,
     val description: String,

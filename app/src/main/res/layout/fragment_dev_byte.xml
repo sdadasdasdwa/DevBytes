@@ -5,38 +5,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.DevByteFragment">
 
-<!--    <data>-->
+    <data>
 
-<!--        <variable-->
-<!--            name="viewModel"-->
-<!--            type="com.example.devbytes.viewmodels.DevByteViewModel" />-->
-<!--    </data>-->
+        <variable
+            name="viewModel"
+            type="com.example.devbytes.viewmodels.DevByteViewModel" />
+    </data>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background_grey">
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:text="@{viewModel.text}"-->
-<!--            android:textColor="#000"-->
-<!--            android:textSize="20sp"/>-->
 
-<!--        <ProgressBar-->
-<!--            android:id="@+id/loading_spinner"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            app:isNetworkError="@{safeUnbox(viewModel.eventNetworkError)}"-->
-<!--            app:playlist="@{viewModel.playlist}" />-->
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:isNetworkError="@{safeUnbox(viewModel.eventNetworkError)}"
+            app:playlist="@{viewModel.playlist}" />
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/recycler_view"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            tools:listitem="@layout/devbyte_item" />-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/devbyte_item" />
+
     </FrameLayout>
 </layout>
 
